@@ -1,5 +1,5 @@
 # homework-two-423
-https://in-info-web4.informatics.iupui.edu/~lilywebe/homework-one-315/index.html
+https://in-info-web4.informatics.iupui.edu/~lilywebe/homework-two-423/index.html
 
 1. You need to understand how to retrieve data and display it on a site for this assignment. 
 1. You will be creating an application that will get a JSON file and retrieve the exact data needed. 
