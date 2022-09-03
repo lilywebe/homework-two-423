@@ -1,5 +1,5 @@
 var key = "524424dea9f74b46bb4202246222908";
-var baseURL = "http://api.weatherapi.com/v1/";
+var baseURL = "//api.weatherapi.com/v1/";
 function getCurrentDate(){
    
     const date = new Date();
