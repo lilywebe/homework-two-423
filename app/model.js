@@ -11,7 +11,9 @@ function getCurrentDate(){
     
 }
 
-function getCurrentWeather(location){
+var forecastdata = null;
+
+function getCurrentWeather(location, callback){
     //$. is like model.
     const currentDate = getCurrentDate();
     //$("#app").html("");
@@ -29,12 +31,10 @@ function getCurrentWeather(location){
 
     //this is for retrieving data from an api
     $.get(
-        `${baseURL}current.json?key=${key}&q=${location}&dt=${currentDate}`,
+        `${baseURL}forecast.json?key=${key}&q=${location}&days=3&aqi=no&alerts=no`,
         (data) => {
-            console.log(data.location.name);
-            console.log(data.location.region);
-            console.log(data);
-            console.log(data);
+            forecastdata = data;
+            callback();
         }
     )
     .fail(function(e){
@@ -47,4 +47,4 @@ function utility(name){
     return name + " Howdy";
 }
 
-export {getCurrentWeather };
+export {getCurrentWeather, forecastdata };

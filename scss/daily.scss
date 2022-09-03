@@ -1,0 +1,66 @@
+
+
+.location{
+    max-width:50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    .location-name{
+        font-size:30px;
+        font-weight:bold;
+    }
+
+    .location-time{
+        font-size:30px;
+    }
+}
+
+.daily-info{
+
+    max-width:90%;
+    min-height:200px;
+    margin: 0 auto;
+    margin-top:100px;
+    margin-bottom:50px;
+
+    background-color:lightblue;
+    
+    .date{
+        font-weight:bold;
+        font-size:30px;
+        text-align:left;
+        margin-bottom:20px;
+        margin-top:20px;
+        padding-left:20px;
+        padding-top:20px;
+                
+    }
+
+    .daily-details{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+
+    .temps{
+       
+        font-size:20px;
+    }
+
+
+    .precipitation{
+        
+        font-size:20px;
+    }
+
+    .rise-set{
+        
+        font-size:20px;
+        
+    }
+}
+
+}

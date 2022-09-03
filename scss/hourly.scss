@@ -1,0 +1,43 @@
+.hourly-info{
+    max-width:90%;
+    max-height:225px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow:auto;
+    
+    
+    .hourly{
+        width:150px;
+        height:150px;
+        background-color:pink;
+        margin: 0 auto;
+        margin:20px;
+        display:inline-block;
+        
+        
+        
+    }
+    .hourly-time{
+        text-align:center;
+        font-size:20px;
+        font-weight: bold;
+    }
+
+    .condition-icon{
+        height:50px;
+            width:50px;
+            margin: 0 auto;
+        
+        img{
+            height:50px;
+            width:50px;
+            
+        }
+    }
+
+    .hourly-text{
+        padding-left:5px;
+
+    }
+}

@@ -1,0 +1,25 @@
+#app{
+    padding-bottom:50px;
+}
+
+
+.header{
+   margin-top:50px;
+   margin-bottom:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:90%;
+    
+    
+    .logo{
+    background-color:lightblue;
+    height:100px;
+    width:300px;
+    text-align:center;
+    }
+
+    .buttons{
+
+    }
+}
