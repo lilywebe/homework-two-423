@@ -43,13 +43,23 @@ innerhtml += `<div class="day"> <div class="daily-info">
 <div class="date">`+day.date+`</div>
 <div class="daily-details">
 <div class="temps">
-    <div class="max-temp">High:`+day.day.maxtemp_f+`</div>
-    <div class="min-temp">Low:`+day.day.mintemp_f+`</div>
-    <div class="avg-temp">Average:`+day.day.avgtemp_f+`</div>
+    <div class="max-temp">High: `+day.day.maxtemp_f+`F</div>
+    <div class="min-temp">Low: `+day.day.mintemp_f+`F</div>
+    <div class="avg-temp">Average: `+day.day.avgtemp_f+`F</div>
+</div>
+<div class="temps">
+    <div class="max-temp">High: `+day.day.maxtemp_c+`C</div>
+    <div class="min-temp">Low: `+day.day.mintemp_c+`C</div>
+    <div class="avg-temp">Average: `+day.day.avgtemp_c+`C</div>
 </div>
 <div class="precipitation">
+<div class="precipitation-icon"><img src="`+day.day.condition.icon+`" alt=""></div>
     <div class="precipitation-text">`+day.day.daily_chance_of_rain+`% chance of rain</div>
-    <div class="precipitation-icon"><img src="`+day.day.condition.icon+`" alt=""></div>
+    
+</div>
+<div class="temps">
+    <div class="max-temp">Max Wind Speed: `+day.day.maxwind_mph+`MPH</div>
+    <div class="min-temp">Average Visibility: `+day.day.avgvis_miles+` Miles</div>
 </div>
 <div class="rise-set">
     <div class="sunrise">
@@ -73,6 +83,7 @@ day.hour.forEach(hour => {
     <div class='hourly-text'>Temperature: `+hour.temp_f+`</div>
     <div class='hourly-text'>Feels like: `+hour.feelslike_f+`</div>
     <div class='hourly-text'>Humidity: `+hour.humidity+`%</div>
+    <div class='hourly-text'>Dewpoint: `+hour.dewpoint_f+`F</div>
     <div class='hourly-text'>Chance of rain:`+hour.chance_of_rain+`%</div>
     </div>`;
      
